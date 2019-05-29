@@ -1,0 +1,240 @@
+html body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: #595959;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    background-color: #ffb824;
+}
+.wrapper h1{
+    position: relative;
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title-wrapper {
+    background-color:  #8c8c8c;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.title-wrapper div{
+    display: inline-block;
+}
+.title-wrapper h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.list-wrapper {
+    background-color: #8c8c8c;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.list-wrapper ul{
+    list-style: none;
+    padding-left: 0;
+    width: 90%;
+}
+.list-wrapper li{
+    margin-bottom: 10px;
+}
+.single-item {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #b2b2b2;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.single-item:hover{
+    background-color: #ffb824;
+    margin-left: 10px;
+    transition: background-color 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+}
+.single-id{
+    margin-right: 40px;
+}
+.single-name{
+    text-transform: capitalize;
+    display: inline-block;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    min-height: 22px;
+    font-weight: 300;
+}
+#myInput{
+    float: right;
+}
+.show-on-mobile{
+    display: none;
+}
+.hide-on-mobile{
+    display: inline-block;
+}
+.show-on-tablet{
+    display: none;
+}
+.btn-wrapper{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+}
+.btn-change {
+    min-width: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 135px;
+}
+.btn-change, a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-change:hover {
+    background-color: #555555;
+    color: white;
+}
+.btn-change-s {
+    min-width: 70px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.btn-change-s:hover {
+    background-color: #555555;
+    color: white;
+}
+.add-new{
+    display: none;
+}
+.left-arrow{
+    position: absolute;
+    left: 0;
+}
+.left-arrow img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+.content form{
+    width: 100%;
+    display:flex;
+    margin: auto;
+    justify-items: center;
+    flex-direction: column;
+}
+.content input{
+    width: 300px;
+    margin-bottom: 10px;
+}
+.input-style{
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #555555;
+}
+.content .myContent{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.first{
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+
+
+/* scrollbar styles */
+
+#style-1::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #8c8c8c;
+}
+
+#style-1::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #8c8c8c;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.scroller {
+    overflow-y: scroll;
+    scrollbar-color: #0A4C95 #C2D2E4;
+}

@@ -1,0 +1,20 @@
+@media only screen and (max-width:1080px) {
+  .wrapper{
+    width: 100%;
+  }
+  .input-wrapper{
+    text-align: center;
+  }
+  .single-item{
+    min-height: 50px;
+  }
+  #myInput{
+    float: none;
+  }
+  .show-on-mobile{
+    display: inline-block;
+  }
+  .show-on-tablet{
+    display: block;
+  }
+}

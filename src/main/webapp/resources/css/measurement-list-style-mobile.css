@@ -1,0 +1,30 @@
+@media only screen and (max-width:480px) {
+    .list-wrapper{
+        padding: 0;
+    }
+    .title-wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .list-wrapper ul{
+        width: 90%;
+    }
+    .single-item{
+        min-height: 70px;
+    }
+    .button-mobile{
+        display: inline-block !important;
+        outline: 0 !important;
+        padding: 0 5px 0 5px !important;
+        height: 29px !important;
+        width: 100px !important;
+        border-radius: 3px !important;
+        border: 0 !important;
+        margin-left: 0 !important;
+        top: 0 ! important;
+        margin-top: 7px;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+}
